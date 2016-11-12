@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'webhook' => 'welcome#verify'
   post 'webhook' => 'welcome#webhook'
 
+  get 'trivia' => 'welcome#solartrivia'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
