@@ -7,11 +7,6 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   mount Facebook::Messenger::Server, at: "bot"
 
-
-  root 'welcome#index'
-  get 'webhook' => 'welcome#verify'
-  post 'webhook' => 'welcome#webhook'
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
